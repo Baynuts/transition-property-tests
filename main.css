@@ -1,0 +1,187 @@
+.row {
+    width: 100%;
+    height: 200px;
+}
+
+.container {
+    width: 32%;
+    float: left;
+    border: 1px solid #f7f7f7;
+    height: 250px;
+    padding: 5px;
+    position: static;
+}
+
+h2 {
+    margin: 0 0 20px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f4f4f4;
+    color: black;
+    font-family: monospace;
+    text-align: center;
+    height: 50px;
+    font-size: small;
+}
+    
+
+.wrap {
+    padding-left: 60px;
+    
+}
+
+.box {
+    width: 50px;
+    height:50px;
+    background-color: #afd275;
+}
+
+.box:hover {
+    width:150px;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+.box-2 {
+    width: 50px;
+    height:50px;
+    background-color: #afd275;
+    transition-property: width, background-color;
+    transition-duration: 2s;
+}
+
+.box-2:hover {
+    width:150px;
+    background-color: #e7717d;
+
+}
+
+.link {
+    color: #c2b9b0;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.link:hover {
+    color: #000;
+}
+
+.box-3 {
+    width: 50px;
+    height:50px;
+    background-color: #e7717d;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out
+}
+
+.box-3:hover {
+    background-color: #c2b9b0;
+
+}
+
+.box-4 {
+    width: 150px;
+    height:0;
+    margin: 25px;
+    background-color: #4056a1;
+    animation-name: growing;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes growing {
+    from {
+        height: 0;
+    }
+    to {
+        height: 150px;
+    }
+}
+
+.ball{
+    position: relative;
+    width: 50px;
+    border-radius: 50px;
+    height:50px;
+    background-color: #d79922;
+    animation-name: jump ;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes jump {
+    from {
+        top: 0;
+    }
+    to {
+        top: 100px;
+    }
+}
+
+.box-5 {
+    width: 100px;
+    height:100px;
+    background-color: #aacc9e;
+transform: skew(-20deg);
+}
+
+
+.box-6 {
+    width: 50px;
+    height:50px;
+    background-color: #afd275;
+    transition-property: height, width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.box-6:hover {
+    height: 100px;
+    width: 100px;
+
+}
+
+.box-7 {
+
+    width: 50px;
+    height:50px;
+    background-color: #c2b9b0;
+    animation-name: spin ;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.element {
+    width: 50px;
+    height:50px;
+    background-color: #d79922;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+.element:hover {
+    transform: translateX(100%);
+
+}
